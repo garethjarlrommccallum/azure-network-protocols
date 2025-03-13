@@ -5,8 +5,8 @@
 <h1>Azure Virtual Machines and Networking</h1>
 
 
-<h2>Description</h2>
-Project consists of creating two virtual machines and a network where I monitor network traffic with software called Wireshark. This is all done within Microsoft Azure. 
+<h2>Objective</h2>
+Creating two virtual machines and a network where I monitor network traffic with Wireshark. This is all done within Microsoft Azure while using Remote Desktop.
 <br />
 
 
@@ -32,26 +32,15 @@ Navigate to Microsoft Azure and create a resource group: <br/>
  ![Screenshot 2025-03-12 141630](https://github.com/user-attachments/assets/dc30ffa4-070d-43a9-89c2-9d250c684e38)
 <br />
 <br />
-Create and Set up the first virtual machine:  <br/>
-
+Create and Set up a Windows 10 virtual machine:  <br/>
 ![Screenshot 2025-03-12 142508](https://github.com/user-attachments/assets/3c613bc2-1679-4c5c-bc65-cbb2f8209b7d)
-
 <br />
 <br />
-
-I'll leave all other settings to default and create this VM:  <br/>
-<img src="https://i.imgur.com/OrrgUQv.png" height="80%" width="80%" alt="Setting Up in Azure"/>
+![Screenshot 2025-03-12 145552](https://github.com/user-attachments/assets/d5c6d3ea-deb2-4aa5-b0a1-8a1a8458cfc5)
 <br />
 <br />
-Now Azure has set up a VM, an IP for the VM, a network security group, a virtual network, a disk, and a NIC (Network Interface Card):  <br/>
-<img src="https://i.imgur.com/gIWv0pv.png" height="80%" width="80%" alt="Setting Up in Azure"/>
-<br />
-<br />
-Second VM setup:  <br/>
-<img src="https://i.imgur.com/vfUOJaG.png" height="80%" width="80%" alt="Setting Up in Azure"/>
-<br />
-<br />
-<img src="https://i.imgur.com/keOWo28.png" height="80%" width="80%" alt="Setting Up in Azure"/>
+Create and Setup a second VM using Linux:  <br/>
+![Screenshot 2025-03-12 150315](https://github.com/user-attachments/assets/2dbfdf9d-613c-4d68-a541-7a272fc68481)
 <br />
 <br />
 In the "Networking" tab I want to ensure this VM will be on the same virtual network as the first one I made. So, I'll select the one already made for "VM1" instead of creating a new virtual network:  <br/>
