@@ -28,20 +28,17 @@ Project consists of creating two virtual machines and a network where I monitor 
 
 <p align="center">
 Navigate to Microsoft Azure and create a resource group: <br/>
-<img src="https://i.imgur.com/Nq0B5A5.png" height="80%" width="80%" alt="Setting Up in Azure"/>
+
+ ![Screenshot 2025-03-12 141630](https://github.com/user-attachments/assets/dc30ffa4-070d-43a9-89c2-9d250c684e38)
 <br />
 <br />
-Once my resource group is created, next I'll create the first virtual machine:  <br/>
-<img src="https://i.imgur.com/aYzQfAh.png" height="80%" width="80%" alt="Setting Up in Azure"/>
+Create and Set up the first virtual machine:  <br/>
+
+![Screenshot 2025-03-12 142508](https://github.com/user-attachments/assets/3c613bc2-1679-4c5c-bc65-cbb2f8209b7d)
+
 <br />
 <br />
-Setting up the first virtual machine:  <br/>
-<img src="https://i.imgur.com/i5ztDtu.png" height="80%" width="80%" alt="Setting Up in Azure"/>
-<br />
-<br />
-<img src="https://i.imgur.com/brgIyMT.png" height="80%" width="80%" alt="Setting Up in Azure"/>
-<br />
-<br />
+
 I'll leave all other settings to default and create this VM:  <br/>
 <img src="https://i.imgur.com/OrrgUQv.png" height="80%" width="80%" alt="Setting Up in Azure"/>
 <br />
