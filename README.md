@@ -43,34 +43,21 @@ Create and Setup a second VM using Linux:  <br/>
 ![Screenshot 2025-03-12 150315](https://github.com/user-attachments/assets/2dbfdf9d-613c-4d68-a541-7a272fc68481)
 <br />
 <br />
-In the "Networking" tab I want to ensure this VM will be on the same virtual network as the first one I made. So, I'll select the one already made for "VM1" instead of creating a new virtual network:  <br/>
-<img src="https://i.imgur.com/QXLXthz.png" height="80%" width="80%" alt="Setting Up in Azure"/>
+Ensure that both VM will be on the same virtual network. 
+![Screenshot 2025-03-13 102241](https://github.com/user-attachments/assets/9e365a94-06ea-4cc9-ba4d-d30c43184293)
+![Screenshot 2025-03-13 102219](https://github.com/user-attachments/assets/0f6479c4-0457-4282-b755-762a859450c7)
 <br />
-<br />
-Now if I go back to my resource group we can see that Azure created everything for VM2 as it did for VM1. Notice how there is only one network, however. This is because the two VMs are on the same network:  <br/>
-<img src="https://i.imgur.com/gIWv0pv.png" height="80%" width="80%" alt="Setting Up in Azure"/>
-<br />
-<br />
-I use VM1's public IP to connect to it using RDP:  <br/>
-<img src="https://i.imgur.com/uBvHBXK.png" height="80%" width="80%" alt="Setting Up in Azure"/>
-<br />
-<br />
-Once my computer has connected to VM1 I will download Wireshark on the VM:  <br/>
-<img src="https://i.imgur.com/lfj12DA.png" height="80%" width="80%" alt="Setting Up in Azure"/>
-<br />
-<br />
-Once Wireshark has downloaded and opened I will select "Ethernet" to observe network traffic:  <br/>
+- Use WinVM public IP and connect to it using RDP
+- After I am connected to WinVM, I will download Wireshark on the VM
+- Use Wireshark to observe network traffic
 <img src="https://i.imgur.com/qCIJYSG.png" height="80%" width="80%" alt="Setting Up in Azure"/>
 <br />
 <br />
-To filter for ICMP (Internet Control Message Protocol) traffic I type "ICMP" at the top of wireshark. To make traffic I will get the private IP address of VM2 and ping it from PowerShell:  <br/>
-<img src="https://i.imgur.com/gFeHSRf.png" height="80%" width="80%" alt="Setting Up in Azure"/>
-<br />
+To filter for ICMP (Internet Control Message Protocol) traffic in Wireshark, type "ICMP" in the filter bar. To generate traffic, retrieve the private IP address of VM2 and ping it using PowerShell.  <br/>
 <br />
 <img src="https://i.imgur.com/MG6FzdI.png" height="80%" width="80%" alt="Setting Up in Azure"/>
 <br />
-<br />
-Now we can make some firewall configurations to deny any ICMP traffic. To do this I will enter a perpetual ping command into PowerShell:  <br/>
+I can configure the firewall to block ICMP traffic by running a perpetual ping command in PowerShell.  <br/>
 <img src="https://i.imgur.com/HGNy9PE.png" height="80%" width="80%" alt="Setting Up in Azure"/>
 <br />
 <br />
